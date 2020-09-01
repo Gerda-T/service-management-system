@@ -31,8 +31,14 @@ const router = new Router({
         },
         {
           path: 'service-delivery',
-          name: 'Service delivery',
+          name: 'Service deliveries',
           component: () => import('@/views/service-delivery/index.vue'),
+          meta: { src: require('@/assets/about.jpg') },
+        },
+        {
+          path: 'business-solutions',
+          name: 'Business solutions',
+          component: () => import('@/views/business-solutions/index.vue'),
           meta: { src: require('@/assets/about.jpg') },
         },
         {

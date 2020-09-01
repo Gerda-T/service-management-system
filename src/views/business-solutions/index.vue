@@ -1,5 +1,4 @@
 <script>
-/* eslint-disable */
   // Extensions
   import View from '@/views/View'
 
@@ -7,23 +6,25 @@
   import LoadSections from '@/mixins/load-sections'
 
   export default {
-    name: 'ServiceDeliveries',
+    name: 'Business Solutions',
 
-    metaInfo: { title: 'Service Deliveries' },
+    metaInfo: { title: 'Solution' },
 
     extends: View,
 
     mixins: [
       LoadSections([
-        'service-deliveries',
-        
+        'Institutions',
+        'Petroleum study and expertise',
+        'Support and Purchase of DimoMaint Software',
+        'IT Sector',
       ]),
     ],
 
     props: {
       id: {
         type: String,
-        default: 'about',
+        default: 'home',
       },
     },
   }
